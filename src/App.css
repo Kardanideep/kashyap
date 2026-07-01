@@ -1,38 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.main-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.section {
+  padding: 3rem 1rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.section h2 {
+  color: #0d2a5c;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #d4af37;
+  padding-bottom: 0.75rem;
+}
+
+.section p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.section ul {
+  list-style-position: inside;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.section ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1rem;
+}
+
+.section ul li:before {
+  content: "✓ ";
+  color: #d4af37;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem 0.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .section p {
+    font-size: 1rem;
+  }
+
+  .section ul {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.5rem 0;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+    margin: 0.75rem 0;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .section p {
+    font-size: 0.95rem;
   }
 }
