@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -19,7 +19,7 @@ function Footer() {
             <p className="tagline">Your Trusted Partner in Labour Law Compliance</p>
             <div className="footer-social">
               <a href="#facebook" aria-label="Facebook" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></a>
-              <a href="#twitter" aria-label="I" className="social-icon"><FontAwesomeIcon icon={faTwitter} /></a>
+              <a href="#instagram" aria-label="Instagram" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
               <a href="#linkedin" aria-label="LinkedIn" className="social-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </div>

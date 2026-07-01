@@ -15,9 +15,6 @@ import {
   faCalculator,
   faSignature,
   faShieldAlt,
-  faPhoneAlt,
-  faEnvelope,
-  faMapMarkerAlt,
   faIndustry,
 } from '@fortawesome/free-solid-svg-icons';
 

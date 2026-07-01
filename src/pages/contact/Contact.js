@@ -87,10 +87,10 @@ function Contact() {
             <a href="https://wa.me/917575023547" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="WhatsApp">
               <FontAwesomeIcon icon={faWhatsapp} />
             </a>
-            <a href="#" className="social-circle" aria-label="Instagram">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="social-circle" aria-label="Instagram">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" className="social-circle" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer  " className="social-circle" aria-label="LinkedIn">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>

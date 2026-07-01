@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle, faShieldAlt, faBalanceScale, faFileSignature } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle, faBalanceScale, faFileSignature } from '@fortawesome/free-solid-svg-icons';
 import { HashLink as Link } from 'react-router-hash-link';
 
 function About() {
