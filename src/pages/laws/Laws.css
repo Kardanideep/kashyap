@@ -263,4 +263,13 @@
     margin-top: 0.5rem;
     display: inline-block;
   }
+.laws-bottom-cta {
+  text-align: center;
+  background: #dee4f7;
+  margin-top: 5rem;
+  padding: 1rem;
+  margin: 2rem 1rem;
+  border-radius: 1rem;
+}
+  
 }

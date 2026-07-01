@@ -27,9 +27,9 @@ function Header() {
         <nav className={`nav ${isOpen ? 'open' : ''}`}>
           <ul className="nav-list">
             <li><HashLink smooth to="/#home" onClick={() => setIsOpen(false)}>Home</HashLink></li>
-            <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
             <li><Link to="/services" onClick={() => setIsOpen(false)}>Services</Link></li>
             <li><Link to="/laws" onClick={() => setIsOpen(false)}>Laws</Link></li>
+            <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
           {/* CTA button – visible on all screens, but hidden on desktop via CSS (desktop-only) */}
