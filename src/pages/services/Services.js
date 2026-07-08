@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,6 +7,11 @@ import { faChevronDown, faTimes, faFileInvoiceDollar, faPiggyBank, faHeartbeat, 
 
 function Services() {
   const [activeModalIndex, setActiveModalIndex] = useState(null);
+
+  useSEO(
+    'Our Services',
+    'Explore KDM Associates\u2019 comprehensive Labour Law services — Payroll, PF, ESI, PT, Shop Act, Bonus Act, Contract Labour, Factory Act, Gratuity, DSC, and more.'
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -1,10 +1,15 @@
 import React, { useEffect } from 'react';
+import useSEO from '../../hooks/useSEO';
 import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, faBalanceScale, faFileSignature } from '@fortawesome/free-solid-svg-icons';
 import { HashLink as Link } from 'react-router-hash-link';
 
 function About() {
+  useSEO(
+    'About Us',
+    'Learn about KDM Associates — a trusted Labour Law Consultancy with years of experience helping Indian businesses stay compliant with all statutory requirements.'
+  );
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

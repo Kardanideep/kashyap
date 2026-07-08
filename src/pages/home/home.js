@@ -1,4 +1,5 @@
 import React from 'react';
+import useSEO from '../../hooks/useSEO';
 import { Link } from 'react-router-dom';
 import './home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -19,6 +20,11 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Home = () => {
+  useSEO(
+    'Home',
+    'KDM Associates is a trusted Labour Law Consultancy helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more. Based in Gujarat, India.'
+  );
+
   // Full services data
   const allServices = [
     { icon: faCalculator, title: 'Payroll Related Services', desc: 'Complete payroll management and statutory deductions.' },

@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import useSEO from '../../hooks/useSEO';
 import './Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationDot, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
+  useSEO(
+    'Contact Us',
+    'Get in touch with KDM Associates for expert Labour Law compliance advice. Call, WhatsApp, or email us today for PF, ESI, Payroll, and statutory compliance services.'
+  );
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

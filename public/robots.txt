@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt for KDM Associates
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://www.kdmassociates.in/sitemap.xml

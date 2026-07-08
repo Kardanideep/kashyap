@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import useSEO from '../../hooks/useSEO';
 import { HashLink as Link } from 'react-router-hash-link';
 import './Laws.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,6 +7,11 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 function Laws() {
   const [activeIndex, setActiveIndex] = useState(null);
+
+  useSEO(
+    'Labour Laws & Acts',
+    'Understand key Indian Labour Laws covered by KDM Associates — EPF Act, ESI Act, Factory Act, Minimum Wages Act, Bonus Act, Gratuity Act, Contract Labour Act, and more.'
+  );
 
   useEffect(() => {
     window.scrollTo(0, 0);
