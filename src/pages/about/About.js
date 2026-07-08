@@ -39,7 +39,7 @@ function About() {
             <div className="about-images">
               <div className="about-accent-bg"></div>
               <img 
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="https://bt.konicaminolta.in/wp-content/themes/BIN/assets/images/Digital%20WOrk%20Place/enterprise-management-service/human-resource/Humanresouce.jpg" 
                 alt="Business Discussion" 
                 className="img-primary"
               />

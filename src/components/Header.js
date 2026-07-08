@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import './Header.css';
@@ -7,20 +7,47 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Check initial position
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <Link to="/" className="logo">
-          <img src="/logo1.png" alt="KDM Associates Logo" className="header-logo-img" />
-          <span className="logo-text">KDM Associates</span>
+          <img
+            src="/logo1.png"
+            alt="KDM Associates Logo"
+            className="header-logo-img"
+          />
+          <div className="logo-text-container">
+            <span className="logo-text">KDM Associates</span>
+            <span className="logo-subtext">Labour Law Consultant</span>
+          </div>
         </Link>
 
-        <button className="hamburger" onClick={toggleMenu} aria-label="Toggle navigation">
+        <button
+          className="hamburger"
+          onClick={toggleMenu}
+          aria-label="Toggle navigation"
+        >
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
 
@@ -32,8 +59,12 @@ function Header() {
             <li><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
             <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
           </ul>
-          {/* CTA button – visible on all screens, but hidden on desktop via CSS (desktop-only) */}
-          <Link to="/contact" className="btn-header-cta desktop-only" onClick={() => setIsOpen(false)}>
+
+          <Link
+            to="/contact"
+            className="btn-header-cta desktop-only"
+            onClick={() => setIsOpen(false)}
+          >
             Get Started
           </Link>
         </nav>

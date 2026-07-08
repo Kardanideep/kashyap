@@ -237,8 +237,8 @@ const Home = () => {
         <div className="container cta-wrapper">
           <div className="cta-content glass-panel">
             <span className="section-badge badge-light">Get Started</span>
-            <h2 className="cta-title">KDM ASSOCIATES IS READY FOR</h2>
-            <h3 className="cta-highlight">LABOUR LAW CONSULTATION</h3>
+            <h2 className="cta-title">KDM ASSOCIATES IS READY TO</h2>
+            <h3 className="cta-highlight">simplify labour law for modern businesses</h3>
             <p className="cta-description">
               Ensure your business is fully compliant and protected with our expert services.
             </p>

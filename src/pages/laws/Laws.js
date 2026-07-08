@@ -19,7 +19,7 @@ function Laws() {
     { 
       name: "Employee's Provident Funds & Misc. Provisions Act", 
       year: "1952",
-      desc: "Mandates the provision of social security and retirement benefits for employees, requiring equal contributions from both employer and employee towards the provident fund."
+      desc: "The EPF Act was introduced to build a secure financial future for employees through regular savings. It creates a retirement fund with contributions from both the employer and the employee. The Act ensures financial stability and social security for the working workforce."
     },
     { 
       name: "Employee's State Insurance Act", 

@@ -282,56 +282,124 @@
 
 .modal-header-flex {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .modal-icon {
-  width: 50px;
-  height: 50px;
-  background: rgba(74, 108, 247, 0.1);
+  width: 64px;
+  height: 64px;
+  background: #f0f4ff;
   color: #4a6cf7;
-  border-radius: 12px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.modal-header-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-title {
   font-size: 1.8rem;
   font-weight: 800;
   color: #1a1a2e;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
   line-height: 1.2;
 }
 
 .modal-desc {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #4a5568;
-  line-height: 1.8;
-  margin-bottom: 2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.modal-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 2rem 0;
 }
 
 .modal-more-details {
-  background: #f8faff;
-  border-left: 4px solid #4a6cf7;
-  padding: 1.5rem;
-  border-radius: 0 12px 12px 0;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 1.8rem;
+  border-left: 6px solid #4a6cf7;
 }
 
-.modal-more-details h4 {
-  margin: 0 0 0.5rem 0;
-  color: #1a1a2e;
-  font-size: 1.1rem;
+.modal-more-details-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.modal-more-details p {
+.modal-more-details-icon {
+  width: 44px;
+  height: 44px;
+  color: #4a6cf7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background: #e0e7ff;
+}
+
+.modal-more-details-header h4 {
   margin: 0;
+  color: #1a1a2e;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.modal-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.modal-benefits-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.benefit-check-icon-wrapper {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid #4a6cf7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.benefit-check-icon {
+  color: #4a6cf7;
+  font-size: 0.75rem;
+}
+
+.modal-benefits-list span {
   color: #4a5568;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.6;
+}
+
+.modal-benefits-list strong {
+  color: #1a1a2e;
+  font-weight: 700;
 }
 
 /* ===== CTA BANNER ===== */
@@ -398,12 +466,54 @@
     height: 180px;
   }
 
+  .modal-img-wrap {
+    height: 180px;
+  }
+
   .modal-body {
     padding: 1.5rem;
   }
 
+  .modal-header-flex {
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .modal-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.4rem;
+    border-radius: 12px;
+  }
+
   .modal-title {
     font-size: 1.4rem;
+  }
+
+  .modal-desc {
+    font-size: 0.95rem;
+  }
+
+  .modal-more-details {
+    padding: 1.2rem;
+  }
+
+  .modal-more-details-header {
+    margin-bottom: 1rem;
+  }
+
+  .modal-more-details-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .modal-more-details-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .modal-benefits-list span {
+    font-size: 0.9rem;
   }
 
   .services-cta-banner {

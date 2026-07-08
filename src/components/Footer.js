@@ -19,7 +19,7 @@ function Footer() {
             <p className="tagline">Your Trusted Partner in Labour Law Compliance</p>
             <div className="footer-social">
               <a href="#facebook" aria-label="Facebook" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></a>
-              <a href="#instagram" aria-label="Instagram" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
+              <a href="https://www.instagram.com/kdm_associates/" aria-label="Instagram" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
               <a href="#linkedin" aria-label="LinkedIn" className="social-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
           </div>
