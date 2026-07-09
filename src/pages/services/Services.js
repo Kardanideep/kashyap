@@ -10,7 +10,34 @@ function Services() {
 
   useSEO(
     'Our Services',
-    'Explore KDM Associates\u2019 comprehensive Labour Law services — Payroll, PF, ESI, PT, Shop Act, Bonus Act, Contract Labour, Factory Act, Gratuity, DSC, and more.'
+    'Explore KDM Associates\u2019 comprehensive Labour Law services — Payroll, PF, ESI, PT, Shop Act, Bonus Act, Contract Labour, Factory Act, Gratuity, DSC, and more.',
+    '/services',
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Labour Law Compliance Services - KDM Associates",
+      "description": "Explore KDM Associates' comprehensive Labour Law services — Payroll, PF, ESI, PT, Shop Act, Bonus Act, Contract Labour, Factory Act, Gratuity, DSC, and more.",
+      "url": "https://www.kdmassociates.com/services",
+      "provider": {
+        "@type": "LegalService",
+        "name": "KDM Associates"
+      },
+      "offers": [
+        { "@type": "Offer", "name": "Payroll Related Services", "description": "Complete payroll management and statutory deductions." },
+        { "@type": "Offer", "name": "PF (Provident Fund Act) Compliance", "description": "EPF registration, monthly challan, returns filing, and claims processing." },
+        { "@type": "Offer", "name": "ESI (Employee State Insurance) Compliance", "description": "ESI registration, monthly contributions, and benefit claims management." },
+        { "@type": "Offer", "name": "Professional Tax (PT)", "description": "State-specific PT registration, deductions, and returns filing." },
+        { "@type": "Offer", "name": "Shop and Establishment Act", "description": "Registration, renewal, and compliance for business premises." },
+        { "@type": "Offer", "name": "Bonus Act Compliance", "description": "Payment of Bonus Act applicability, calculation, and disbursement." },
+        { "@type": "Offer", "name": "Contract Labour Act", "description": "Principal employer registration, contractor licensing, and compliance." },
+        { "@type": "Offer", "name": "Minimum Wages Act Compliance", "description": "State-wise minimum wage advisory and compliant salary structuring." },
+        { "@type": "Offer", "name": "Factory Act Compliance", "description": "Factory license, renewals, statutory registers, and safety compliance." },
+        { "@type": "Offer", "name": "Labour Welfare Fund", "description": "LWF registration and timely contributions." },
+        { "@type": "Offer", "name": "Gratuity Act Compliance", "description": "Gratuity calculation, trust formation, and claims processing." },
+        { "@type": "Offer", "name": "Digital Signature Certificate (DSC)", "description": "Class 3 DSC issuance and renewal for compliance portals." },
+        { "@type": "Offer", "name": "Workmen's Compensation Policy", "description": "Policy procurement and workplace compensation claims management." }
+      ]
+    }
   );
 
   useEffect(() => {

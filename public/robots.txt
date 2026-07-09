@@ -1,4 +1,12 @@
-# robots.txt for KDM Associates
+# Robots.txt — KDM Associates (https://www.kdmassociates.com)
+
 User-agent: *
 Allow: /
+
+# Block irrelevant system paths
+Disallow: /static/js/
+Disallow: /static/css/
+Disallow: /static/media/
+
+# Sitemap
 Sitemap: https://www.kdmassociates.com/sitemap.xml

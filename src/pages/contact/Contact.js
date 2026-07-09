@@ -8,7 +8,43 @@ import { faWhatsapp, faInstagram, faLinkedin } from '@fortawesome/free-brands-sv
 function Contact() {
   useSEO(
     'Contact Us',
-    'Get in touch with KDM Associates for expert Labour Law compliance advice. Call, WhatsApp, or email us today for PF, ESI, Payroll, and statutory compliance services.'
+    'Get in touch with KDM Associates for expert Labour Law compliance advice. Call, WhatsApp, or email us today for PF, ESI, Payroll, and statutory compliance services.',
+    '/contact',
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact KDM Associates - Labour Law Consultants",
+      "description": "Get in touch with KDM Associates for expert Labour Law compliance advice. Call, WhatsApp, or email us for PF, ESI, Payroll, and statutory compliance services.",
+      "url": "https://www.kdmassociates.com/contact",
+      "mainEntity": {
+        "@type": "LegalService",
+        "name": "KDM Associates",
+        "telephone": "+91-7575023547",
+        "email": "kdmassociates01@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "11-12, 1st Floor, Bapa Sitaram Complex, Gondal Highway 8-B, Near Gondal Chowkdi",
+          "addressLocality": "Rajkot",
+          "addressRegion": "Gujarat",
+          "postalCode": "360004",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "22.240169",
+          "longitude": "70.800054"
+        },
+        "hasMap": "https://maps.google.com/maps?q=22.240169,70.800054",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ]
+      }
+    }
   );
   useEffect(() => {
     window.scrollTo(0, 0);

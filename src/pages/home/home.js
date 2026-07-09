@@ -22,7 +22,28 @@ import {
 const Home = () => {
   useSEO(
     'Home',
-    'KDM Associates is a trusted Labour Law Consultancy helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more. Based in Gujarat, India.'
+    'KDM Associates is a trusted Labour Law Consultancy helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more. Based in Gujarat, India.',
+    '/',
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "KDM Associates - Trusted Labour Law Consultants in India",
+      "description": "KDM Associates is a trusted Labour Law Consultancy helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more.",
+      "url": "https://www.kdmassociates.com/",
+      "provider": {
+        "@type": "LegalService",
+        "name": "KDM Associates",
+        "telephone": "+91-7575023547",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "11-12, 1st Floor, Bapa Sitaram Complex, Gondal Highway 8-B, Near Gondal Chowkdi",
+          "addressLocality": "Rajkot",
+          "addressRegion": "Gujarat",
+          "postalCode": "360004",
+          "addressCountry": "IN"
+        }
+      }
+    }
   );
 
   // Full services data

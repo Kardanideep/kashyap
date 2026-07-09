@@ -8,7 +8,22 @@ import { HashLink as Link } from 'react-router-hash-link';
 function About() {
   useSEO(
     'About Us',
-    'Learn about KDM Associates — a trusted Labour Law Consultancy with years of experience helping Indian businesses stay compliant with all statutory requirements.'
+    'Learn about KDM Associates — a trusted Labour Law Consultancy with years of experience helping Indian businesses stay compliant with all statutory requirements.',
+    '/about',
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About KDM Associates - Labour Law Consultants",
+      "description": "Learn about KDM Associates — a trusted Labour Law Consultancy helping Indian businesses stay compliant with PF, ESI, Factory Act, Gratuity, and all statutory requirements.",
+      "url": "https://www.kdmassociates.com/about",
+      "mainEntity": {
+        "@type": "LegalService",
+        "name": "KDM Associates",
+        "description": "Trusted Labour Law Consultancy providing PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity and statutory compliance services across India.",
+        "foundingLocation": "Rajkot, Gujarat, India",
+        "areaServed": "India"
+      }
+    }
   );
   useEffect(() => {
     window.scrollTo(0, 0);

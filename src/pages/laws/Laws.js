@@ -10,7 +10,33 @@ function Laws() {
 
   useSEO(
     'Labour Laws & Acts',
-    'Understand key Indian Labour Laws covered by KDM Associates — EPF Act, ESI Act, Factory Act, Minimum Wages Act, Bonus Act, Gratuity Act, Contract Labour Act, and more.'
+    'Understand key Indian Labour Laws covered by KDM Associates — EPF Act, ESI Act, Factory Act, Minimum Wages Act, Bonus Act, Gratuity Act, Contract Labour Act, and more.',
+    '/laws',
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Indian Labour Laws & Acts - KDM Associates",
+      "description": "Understand key Indian Labour Laws covered by KDM Associates — EPF Act 1952, ESI Act 1948, Factory Act 1948, Minimum Wages Act 1948, Bonus Act 1965, Gratuity Act 1972, Contract Labour Act 1970, and more.",
+      "url": "https://www.kdmassociates.com/laws",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1,  "name": "Employee's Provident Funds & Misc. Provisions Act, 1952" },
+          { "@type": "ListItem", "position": 2,  "name": "Employee's State Insurance Act, 1948" },
+          { "@type": "ListItem", "position": 3,  "name": "Factories Act, 1948" },
+          { "@type": "ListItem", "position": 4,  "name": "Minimum Wages Act, 1948" },
+          { "@type": "ListItem", "position": 5,  "name": "Payment Of Bonus Act, 1965" },
+          { "@type": "ListItem", "position": 6,  "name": "Payment Of Gratuity Act, 1972" },
+          { "@type": "ListItem", "position": 7,  "name": "The Building And Other Construction Workers Act, 1996" },
+          { "@type": "ListItem", "position": 8,  "name": "Equal Remuneration Act, 1976" },
+          { "@type": "ListItem", "position": 9,  "name": "Contract Labour Act (Regulation & Abolition), 1970" },
+          { "@type": "ListItem", "position": 10, "name": "Labour Welfare Fund" },
+          { "@type": "ListItem", "position": 11, "name": "Professional Tax Act" },
+          { "@type": "ListItem", "position": 12, "name": "Digital Signature" },
+          { "@type": "ListItem", "position": 13, "name": "Workmen's Compensation Policy" }
+        ]
+      }
+    }
   );
 
   useEffect(() => {
