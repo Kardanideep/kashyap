@@ -88,13 +88,13 @@ const Home = () => {
   // Full links data
   const allLinks = [
     { label: 'PAY EPF CHALLAN', url: 'https://unifiedportal-emp.epfindia.gov.in/epfo/' },
-    { label: 'PAY ESI CHALLAN', url: 'https://portal.esic.gov.in/ESICInsurance1/RevenueOne/MonthlyContribution/eChallan.aspx' },
     { label: 'UAN MEMBER PORTAL', url: 'https://unifiedportal-mem.epfindia.gov.in/memberinterface/' },
+    { label: 'MEMBERS EPF PASSBOOK', url: 'https://passbook.epfindia.gov.in/MemberPassBook/login' },
     { label: 'EPF TRRN QUARRY', url: 'https://www.epfindia.gov.in/site_en/trrn_maintenance.php' },
-    { label: 'EPF CLAIM STATUS', url: 'https://unifiedportal-mem.epfindia.gov.in/memberinterface/claimStatus' },
-    { label: 'LABOUR AND EMPLOYMENT', url: 'https://ifp.gujarat.gov.in/DIGIGOV/' },
+    { label: 'PAY ESI CHALLAN', url: 'https://portal.esic.gov.in/ESICInsurance1/RevenueOne/MonthlyContribution/eChallan.aspx' },
+    { label: 'LWF PORTAL', url: 'https://glwbcrm.gujarat.gov.in/crm/' },
     { label: 'UMANG MOBILE APPLICATION', url: 'https://web.umang.gov.in/web_new/login' },
-    { label: 'MEMBERS EPF PASSBOOK', url: 'https://passbook.epfindia.gov.in/MemberPassBook/login' }
+    { label: 'LABOUR AND EMPLOYMENT', url: 'https://ifp.gujarat.gov.in/DIGIGOV/' },
   ];
 
   const displayedLinks = allLinks.slice(0, 8);

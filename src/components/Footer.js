@@ -18,7 +18,7 @@ function Footer() {
             <h3>KDM Associates</h3>
             <p className="tagline">Your Trusted Partner in Labour Law Compliance</p>
             <div className="footer-social">
-              <a href="#facebook" aria-label="Facebook" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></a>
+              <a href="https://www.facebook.com/share/1GrN7MeLXN/" aria-label="Facebook" className="social-icon"><FontAwesomeIcon icon={faFacebook} /></a>
               <a href="https://www.instagram.com/kdm_associates/" aria-label="Instagram" className="social-icon"><FontAwesomeIcon icon={faInstagram} /></a>
               <a href="https://www.linkedin.com/company/kdm-associates/" aria-label="LinkedIn" className="social-icon"><FontAwesomeIcon icon={faLinkedin} /></a>
             </div>
