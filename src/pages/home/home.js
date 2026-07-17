@@ -22,13 +22,13 @@ import {
 const Home = () => {
   useSEO(
     'Home',
-    'KDM Associates is a trusted Labour Law Consultancy helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more. Based in Gujarat, India.',
+    'KDM Associates is a trusted Labour Law Consultancy in Rajkot, Gujarat helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more.',
     '/',
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "KDM Associates - Trusted Labour Law Consultants in India",
-      "description": "KDM Associates is a trusted Labour Law Consultancy helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more.",
+      "name": "KDM Associates - Trusted Labour Law Consultants in Rajkot, Gujarat",
+      "description": "KDM Associates is a trusted Labour Law Consultancy in Rajkot, Gujarat helping businesses achieve complete legal compliance — PF, ESI, Payroll, Factory Act, Bonus Act, Gratuity, and more.",
       "url": "https://www.kdmassociates.com/",
       "provider": {
         "@type": "LegalService",

@@ -13,12 +13,12 @@ const BASE_URL = 'https://www.kdmassociates.com';
 function useSEO(title, description, canonicalPath = '/', ldJson = null) {
   useEffect(() => {
     const fullTitle = title
-      ? `${title} | KDM Associates - Labour Law Consultants`
-      : 'KDM Associates - Trusted Labour Law Consultants in India';
+      ? `${title} | KDM Associates - Labour Law Consultants in Rajkot`
+      : 'KDM Associates - Trusted Labour Law Consultants in Rajkot, Gujarat';
 
     const fullDesc =
       description ||
-      'KDM Associates provides expert labour law compliance services including PF, ESI, Payroll, Factory Act, and more across India.';
+      'KDM Associates provides expert labour law compliance services in Rajkot, Gujarat including PF, ESI, Payroll, Factory Act, and more.';
 
     const canonicalUrl = `${BASE_URL}${canonicalPath}`;
 
