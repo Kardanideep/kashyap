@@ -261,6 +261,11 @@
     gap: 1rem 2rem;
   }
 
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
   .footer-links li {
     margin-bottom: 0;
   }
@@ -327,9 +332,7 @@
     margin-bottom: 1rem;
   }
 
-  .footer-links ul {
-    gap: 0.8rem 1.5rem;
-  }
+
 
   .footer-links a {
     font-size: 0.95rem;
